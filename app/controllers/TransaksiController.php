@@ -16,7 +16,8 @@ class TransaksiController extends Controller {
         $data['transaksi'] = $this->model('Transaksi')->getById($id);
         
         if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') {
-            echo json_encode($data['transaksi']);  
+            echo json_encode($data['transaksi']); 
+            exit;
         }
         
         $data['title'] = 'Detail Transaksi';
