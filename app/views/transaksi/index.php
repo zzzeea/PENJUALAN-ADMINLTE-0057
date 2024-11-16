@@ -100,10 +100,6 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="tanggal" class="form-label">Tanggal</label>
-                            <input type="date" class="form-control" id="tanggal" name="tanggal" required>
-                        </div>
-                        <div class="mb-3">
                             <label for="jumlah" class="form-label">Jumlah</label>
                             <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" required>
                         </div>
