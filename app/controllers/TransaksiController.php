@@ -36,7 +36,6 @@ class TransaksiController extends Controller {
             $data = [
                 'kd_barang' => $kd_barang,
                 'id_pelanggan' => $_POST['id_pelanggan'],
-                'tanggal' => $_POST['tanggal'],
                 'jumlah' => $jumlah,
                 'total_harga' => $total_harga
             ];
