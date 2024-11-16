@@ -50,11 +50,10 @@ class Transaksi {
     
         // Insert data transaksi ke tabel
         $stmt = $this->db->query("INSERT INTO $this->table 
-                                  (kd_barang, id_pelanggan, tanggal, jumlah, total_harga) 
-                                  VALUES (:kd_barang, :id_pelanggan, :tanggal, :jumlah, :total_harga)");
+                                  (kd_barang, id_pelanggan, jumlah, total_harga) 
+                                  VALUES (:kd_barang, :id_pelanggan, :jumlah, :total_harga)");
         $stmt->bindParam(':kd_barang', $data['kd_barang']);
         $stmt->bindParam(':id_pelanggan', $data['id_pelanggan']);
-        $stmt->bindParam(':tanggal', $data['tanggal']);
         $stmt->bindParam(':jumlah', $data['jumlah']);
         $stmt->bindParam(':total_harga', $data['total_harga']);
         $stmt->execute();
